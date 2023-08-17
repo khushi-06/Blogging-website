@@ -51,7 +51,7 @@ const Login = () => {
     <Components>
       <img className="main-img" src="/img/logo.png" />
 
-      {/* <B>
+      <B>
         <TextField variant="standard" label="Enter Username" />
         <TextField variant="standard" label="Enter Password"/>
         <Loginbutton variant="contained">LogIn</Loginbutton>
@@ -59,9 +59,9 @@ const Login = () => {
           OR
         </Typography>
         <Signinbutton>Create Account </Signinbutton>
-      </B> */}
+      </B>
 
-      <B>
+      {/* <B>
         <TextField variant="standard" label="Enter Name" />
         <TextField variant="standard" label="Enter UserName"/>
         <TextField variant="standard" label="Enter Password"/>
@@ -70,7 +70,7 @@ const Login = () => {
           OR
         </Typography>
         <Signinbutton>Already Have Account </Signinbutton>
-      </B>
+      </B> */}
 
     </Components>
   );
