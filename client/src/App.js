@@ -7,7 +7,10 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <div style={{marginTop: 64}}>
       <Login/>
+      </div>
+      
       
     </div>
   );
