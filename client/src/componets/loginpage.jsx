@@ -71,6 +71,11 @@ const Login = () => {
     toggleaccount('Login');
   }
 
+  const onInputChange=(e)=>{
+    console.log(e.target.name, e.target.value);
+  }
+
+
   return (
     <Components>
       <img className="main-img" src="/img/logo.png" />
@@ -79,8 +84,8 @@ const Login = () => {
 
       {account == "Login" ? (
         <B>
-          <TextField variant="standard" label="Enter Username" />
-          <TextField variant="standard" label="Enter Password" />
+          <TextField variant="standard" onChange={(e)=>onInputChange(e)} name="username" label="Enter Username" />
+          <TextField variant="standard" onChange={(e)=>onInputChange(e)} name="password" label="Enter Password" />
           <Loginbutton variant="contained">LogIn</Loginbutton>
           <Typography style={{ textAlign: "center" }}>OR</Typography>
           <Signinbutton  onClick={()=>toggleSigup()} >Create Account </Signinbutton>
@@ -89,9 +94,9 @@ const Login = () => {
 
       ) : (
         <B>
-          <TextField variant="standard" label="Enter Name" />
-          <TextField variant="standard" label="Enter UserName" />
-          <TextField variant="standard" label="Enter Password" />
+          <TextField variant="standard" onChange={(e)=>onInputChange(e)} name='name' label="Enter Name" / >
+          <TextField variant="standard" onChange={(e)=>onInputChange(e)} name="username" label="Enter UserName" />
+          <TextField variant="standard" onChange={(e)=>onInputChange(e)} name="password" label="Enter Password" />
           <Loginbutton variant="contained">SignUp</Loginbutton>
           <Typography style={{ textAlign: "center" }}>OR</Typography>
           <Signinbutton  onClick={()=>toggleLogin()}>Already Have Account </Signinbutton>
