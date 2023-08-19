@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This will handle the data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khushi-06/Blogging-website.git"
+  },
+  "author": "khushi gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khushi-06/Blogging-website/issues"
+  },
+  "homepage": "https://github.com/khushi-06/Blogging-website#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
