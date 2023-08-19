@@ -58,10 +58,17 @@ const Pic = styled("img")({
 });
 
 
+const signupintialvalue={
+  name:'',
+  username:'',
+  password:''
+}
+
 
 
 const Login = () => {
   const [account, toggleaccount] = useState("Login");
+  const [signup, setSignup] = useState("signupintialvalue");
 
   const toggleSigup =()=>{
     toggleaccount('signup');
@@ -72,7 +79,8 @@ const Login = () => {
   }
 
   const onInputChange=(e)=>{
-    console.log(e.target.name, e.target.value);
+    setSignup({...signup,[e.target.name]: [e.target.value]});
+    
   }
 
 
