@@ -5,13 +5,13 @@
 
 .main-img{
   position: absolute;
-  top:0px;
+  top: 119px;
   bottom: auto;
-  place-items:center;
+  place-items: center;
   display: flex;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
   align-items: center;
-  width: 300px; /* Set your desired width */
-  height: 300px; /* Set your desired height */
+  width: 308px;
+  height: 281px;
   overflow: hidden;
 }

@@ -27,7 +27,7 @@ const Components = styled(Box)`
 
 const B = styled(Box)`
   position: absolute;
-  top: 200px;
+  top: 300px;
   padding: 25px 35px;
   display: flex;
   flex-direction: column;
@@ -83,7 +83,9 @@ const Login = () => {
     
   }
 
+const signupUser=()=>{
 
+}
   return (
     <Components>
       <img className="main-img" src="/img/logo.png" />
